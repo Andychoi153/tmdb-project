@@ -32,6 +32,10 @@ Services process
 
 
 * Deployment instructions
+  * bundle install
+  ```
+  $ bundle install
+  ```
   * rails 서버 실행
     * **crawler 실행 이전에 반드시 서버는 켜져 있어야 합니다**
   ```
@@ -46,7 +50,8 @@ Services process
     require 'openssl'
     require 'json'
   ```
-   * 단일 / 복수 개 insert 가능
+   * crawler 실행
+     * 단일 / 복수 개 insert 가능
   ```
   $ rails runner lib/crawl_tv.rb 1399
   $ rails runner lib/crawl_tv.rb 6 34
