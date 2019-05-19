@@ -1,0 +1,31 @@
+<h1><%= @tv.name %></h1>
+<img src="http://image.tmdb.org/t/p/w185//<%= @tv.poster_path%>"/>
+<br>
+
+<h2> Vote Info </h2>
+<h3> Vote Average </h3>
+<%= @tv.vote_average%>
+<h3> Vote Count </h3>
+<%= @tv.vote_count%>
+
+<h2>Seasons</h2>
+<% @season.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.poster_path%>"/>
+<a href="season?id=<%= x.tv_id%>&season_number=<%=x.season_number%>">Season <%= x.season_number%></a>
+<br>
+<% end %>
+<br>
+
+<h2>Crew</h2>
+<% @crew.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.profile_path%>"/>
+<%= x.name%><br>
+<% end %>
+<br>
+
+<h2>Cast</h2>
+<% @cast.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.profile_path%>"/>
+<%= x.name%><br>
+<% end %>
+<br>

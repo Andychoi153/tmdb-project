@@ -1,0 +1,23 @@
+<h1><%= @tv.name %> Season <%= @season_number%> </h1>
+
+<h2>Episodes</h2>
+<% @episode.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.still_path%>"/>
+<a href="episode?id=<%= x.tv_id%>&season_number=<%=x.season_number%>&episode_number=<%=x.episode_number%>">Episode<%= x.episode_number%></a>
+<br>
+<% end %>
+<br>
+
+<h2>Crew</h2>
+<% @crew.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.profile_path%>"/>
+<%= x.name%><br>
+<% end %>
+<br>
+
+<h2>Cast</h2>
+<% @cast.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.profile_path%>"/>
+<%= x.name%><br>
+<% end %>
+<br>

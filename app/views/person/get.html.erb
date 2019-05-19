@@ -1,0 +1,19 @@
+<h1><%= @person.name %></h1>
+<img src="http://image.tmdb.org/t/p/w185//<%= @person.profile_path%>"/>
+<br>
+
+<h2>Movie</h2>
+<% @movie.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.poster_path%>"/>
+<br>
+<%= x.title%>
+<% end %>
+<br>
+
+<h2>TV Series</h2>
+<% @tv.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.poster_path%>"/>
+<br>
+<%= x.name%>
+<% end %>
+<br>

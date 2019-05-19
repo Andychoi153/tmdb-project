@@ -1,0 +1,24 @@
+<h1>TMDB Viewer</h1>
+<br>
+
+<h2>Tv</h2>
+<% @tv.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.poster_path%>"/>
+<a href="tv/info?id=<%= x.tv_id%>"><%= x.name%></a><br>
+<% end %>
+<br>
+
+<h2>Movie</h2>
+<% @movie.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.poster_path%>"/>
+<a href="movie/info?id=<%= x.movie_id%>"><%= x.title%></a><br>
+
+<% end %>
+<br>
+
+<h2>People</h2>
+<% @people.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.profile_path%>"/>
+<a href="person/info?id=<%= x.person_id%>"><%= x.name%></a><br>
+<% end %>
+<br>

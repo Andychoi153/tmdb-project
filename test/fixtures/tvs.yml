@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tv_id: 1
+  name: MyString
+  poster_path: MyString
+  vote_average: 1.5
+  vote_count: 1
+
+two:
+  tv_id: 1
+  name: MyString
+  poster_path: MyString
+  vote_average: 1.5
+  vote_count: 1

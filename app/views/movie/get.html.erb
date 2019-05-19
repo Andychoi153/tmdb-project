@@ -1,0 +1,25 @@
+<h1><%= @movie.title %></h1>
+<img src="http://image.tmdb.org/t/p/w185//<%= @movie.poster_path%>"/>
+<br>
+
+<h2> Vote Info </h2>
+<h3> Vote Average </h3>
+<%= @movie.vote_average%>
+<h3> Vote Count </h3>
+<%= @movie.vote_count%>
+
+<h2>Crew</h2>
+<% @crew.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.profile_path%>"/>
+<br>
+<%= x.name%>
+<% end %>
+<br>
+
+<h2>Cast</h2>
+<% @cast.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.profile_path%>"/>
+<br>
+<%= x.name%>
+<% end %>
+<br>

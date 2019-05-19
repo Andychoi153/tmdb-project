@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tv_id: 1
+  person_id: 1
+  role: MyString
+
+two:
+  tv_id: 1
+  person_id: 1
+  role: MyString

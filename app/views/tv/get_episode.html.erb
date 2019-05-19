@@ -1,0 +1,24 @@
+
+<h1><%= @tv.name %> Season <%= @episode.season_number%> Episode <%= @episode.episode_number%></h1>
+
+<img src="http://image.tmdb.org/t/p/w185//<%= @episode.still_path%>"/>
+<h2> Vote Info </h2>
+<h3> Vote Average </h3>
+<%= @episode.vote_average%>
+<h3> Vote Count </h3>
+<%= @episode.vote_count%>
+<br>
+
+<h2>Crew</h2>
+<% @crew.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.profile_path%>"/>
+<%= x.name%><br>
+<% end %>
+<br>
+
+<h2>Cast</h2>
+<% @cast.each do |x| %>
+<img src="http://image.tmdb.org/t/p/w185//<%= x.profile_path%>"/>
+<%= x.name%><br>
+<% end %>
+<br>
