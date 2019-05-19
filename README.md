@@ -61,6 +61,15 @@ Services process
   ```
 
 
+View
+---
+
+* 접속 주소: http://localhost:3000
+![Alt text](/view.png)
+* 해당 이미지 옆의 이름 링크를 클릭하면 관련된 컬럼 view 페이지로 넘어간다.
+
+
+
 Convention
 ----
 
@@ -68,7 +77,8 @@ Convention
   * 일단 standard error 만 처리
   * 대부분 standard error 는 db duplicate entry 문제임
   * rails 에서 제공하는 debug view 대신 json 형식으로 status & message return
-  * crawl script가 post 형식으로 server 에 db 넣으줄 값 입력, 해당 요청의  return 을 db insert 실패 발생시 원인 파악을 하기 위해서 htmls view 대신 간결한 json 으로 return
+  * crawl script가 post 형식으로 server 에 db 넣어줄 값을 던짐
+  * db insert 실패 발생시 원인 파악을 콘솔에서 하기 위해서 htmls view 대신 간결한 json 으로 return
 
 ```
 # /lib/error/error_handler

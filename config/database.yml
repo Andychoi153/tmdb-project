@@ -4,5 +4,5 @@ development:
   database: tmdb
   pool: 5
   username: root
-  password:
+  password: eqrqrr9326
   socket: /tmp/mysql.sock
